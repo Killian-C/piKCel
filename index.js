@@ -1,9 +1,11 @@
-function createPixel(paletteSlot, id, color) 
+function createPixel(paletteSlot, id, color, size) 
 {
     const pixel = document.createElement('div');
     pixel.classList.add('pix-col', 'waves-effect', 'waves-light');
     pixel.innerHTML = `${id}`;
     pixel.style.backgroundColor = `${color}`;
+    pixel.style.width = `${size}` + 'px';
+    pixel.style.height = `${size}` + 'px';
     paletteSlot.appendChild(pixel);
 }
 
@@ -11,7 +13,7 @@ function createRow(canvasSolt, canvasSize) {
     const row = document.createElement('div');
     row.classList.add('pix-row');
     for (let i = 1; i <= canvasSize; i++) {
-        createPixel(row, '', 'white');
+        createPixel(row, '', 'white', 400 / canvasSize);
     }
     canvasSolt.appendChild(row);
 }
@@ -48,7 +50,7 @@ for (paletteRow of paletteRows) {
 }
 
 const canvas = document.getElementById('canvas');
-const canvasSize = 8;
+const canvasSize = 16;
 
 for (let i = 1; i <= canvasSize; i++) {
     createRow(canvas, canvasSize);
