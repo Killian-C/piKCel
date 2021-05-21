@@ -1,6 +1,10 @@
 @import url("variables.css");
 @import url("pixel.css");
 
+* {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -17,7 +21,12 @@ main {
     margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+h2, h3, h4, h5, h6 {
     margin: 0;
     font-size: 2rem;
 }
