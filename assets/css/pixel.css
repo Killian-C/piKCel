@@ -1,0 +1,19 @@
+#palette, #canvas {
+    display: table;
+    border: 3px solid #F0F4C3;
+    width: auto;
+    margin: 1rem auto 1rem auto;
+}
+
+.pix-row {
+    display: table-row;
+}
+
+.pix-col {
+    display: table-cell;
+    width: calc(var(--pixWidth) * 2);
+    height: calc(var(--pixWidth) * 2);
+    color: var(--mainColor);
+    border: 1px solid #F0F4C3;
+    vertical-align: middle;
+}

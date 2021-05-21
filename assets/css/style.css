@@ -1,0 +1,34 @@
+@import url("variables.css");
+@import url("pixel.css");
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: auto;
+}
+
+.container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.page-footer {
+    padding: 1rem;
+}
+
+.nav-wrapper, .page-footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
